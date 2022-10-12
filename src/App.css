@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  height:auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffaf0;
+}
+
+.container{
+  display: flex;
+  /* height: 45vh; */
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
+  padding: 20px;
+}
+
+.TodoForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+ 
+}
+input{
+  width:1000px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 500px;
+}
+.Submit{
+  display: flex-start;
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+
+}
+.alltodos{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.singletodo{
+  border: 10px;
+  background-color:white;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width:1000px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 500px;
+}
+.todotext{
+  flex: 1;
+}
+
+.tick{
+  background-color: white;
+  margin: 5px;
+  color: #28a745;
+  border-color: #28a745;
+  padding: 10px;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tick:hover{
+  background-color: #28a745;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cross{
+  background-color: white;
+  margin: 5px;
+  color: #dc3545;
+  border-color: #dc3545;
+  padding: 10px;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: red;
+  
+}
+.cross:hover{
+  background-color: #dc3545;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.empty{
+  border: 1px solid black;
+}
+.heading{
+  font-family: Geneva, sans-serif;
+}
+
+.completion{
+  text-decoration: line-through;
 }
